@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../images/logoConFondo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Mandanos tu lugar!</title>
+</head>
+<body>
+    <div class="gridContacto">
+    <!-- Encabezado -->
+        <header>
+            <a href="../index.html" class="header__img"><img src="../images/logo.svg"></a>
+            <nav>
+                <ul>
+                    <li class="nav__inicio"><a href="../index.html">Inicio</a></li>
+                    <li class="nav__nosotros"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="nav__destinos"><a href="destinos.html">Destinos</a></li>
+                    <li class="nav__contacto"><a href="contacto.html">Contacto</a></li>
+                    <li class="nav__nuevoLugar"><a href="nuevo_lugar.html">Mandanos tu lugar!</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Contenido principal -->
+        <main class="main">
+            <div class="main__banner">
+                <div class="main__h1">
+                    <h1>Mandanos tu lugar!</h1>
+                </div>
+            </div>
+            <section class="main__sectionForm">
+                <h2 class="main__h2">Querés que tu lugar aparezca en nuestra página?</h2>
+                <h3 class="main__h3">Si sos dueño de algún lugar turístico o algún lugar donde la gente realice actividades recreativas y querés que figure en nuestro sitio, rellená este formulario y nos contactaremos con vos a la brevedad.</h3>
+                <div class="section__form">
+                    <img src="../images/Get started.svg" alt="support">
+                    <form action="enviar.php" method="post" enctype="text/plain">
+                            <div class="form__div form__div--flex">
+                                <label for="nombre">Nombre y apellido</label>
+                                <input type="text" name="nombre" placeholder="Ej: Juan Perez" class="form__div--inputStyle" required>
+                            </div>
+                            <div class="form__div form__div--flex">
+                                <label for="mail">Mail</label>
+                                <input type="email" name="mail" placeholder="Ej: juanperez@gmail.com" class="form__div--inputStyle" required>
+                            </div>
+                            <div class="form__div form__div--flex">
+                                <label for="nombreLugar">Nombre del lugar</label>
+                                <input type="text" name="nombreLugar" placeholder="Ej: Bar de Juan Perez" class="form__div--inputStyle" required>
+                            </div>
+                            <div class="form__div form__div--flex">
+                                <label for="tel">Nro. de teléfono</label>
+                                <input type="tel" name="tel" placeholder="Ej: 01 2345 6789" class="form__div--inputStyle" required>
+                            </div>
+                            <div class="form__div form__div--flex">
+                                <label for="localidad">Localidad</label>
+                                <input type="text" name="localidad" placeholder="Ej: CABA" class="form__div--inputStyle" required>
+                            </div>
+                            <div class="form__div form__div--flex">
+                                <label for="rubro">Rubro</label>
+                                <select name="rubro" class="form__div--inputStyle" required>
+                                    <option>Centro turístico</option>
+                                    <option>Atractivo turístico</option>
+                                    <option>Gastronomía</option>
+                                    <option>Entretenimiento y ocio</option>
+                                    <option>Otros</option>
+                                </select>
+                            </div>
+                            <div class="form__div form__div--flex">
+                                <label for="descripcion">Breve reseña</label>
+                                <textarea name="descripcion" cols="30" rows="5" placeholder="Contanos brevemente de qué trata tu lugar" class="form__div--inputStyle" required></textarea>
+                            </div>
+                            <div class="form__div form__resetSubmit">
+                                <input type="reset" value="Borrar todo" class="form__resetSubmit--style form__resetSubmit--style1">
+                                <input type="submit" value="Enviar" class="form__resetSubmit--style form__resetSubmit--style2">
+                            </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    <!-- Pie de página -->
+        <footer>
+            <div>
+                <p>Che! Llueve! 2022 | Todos los derechos reservados ©</p>
+            </div> 
+            <div class="footer__div2">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://twitter.com/home?lang=es"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+            </div>    
+        </footer>
+    </div>
+</body>
+</html>
