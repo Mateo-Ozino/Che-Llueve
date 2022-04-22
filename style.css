@@ -39,6 +39,11 @@ header{
     height: fit-content;
     padding: 0.5rem;
     align-self: center;
+    transition: ease-in-out 0.2s;
+}
+.header__img:hover{
+    transform: translateY(-3px);
+    filter: drop-shadow(4px 4px #65649574);
 }
 nav{
     margin-right: 1rem;
@@ -76,7 +81,7 @@ nav ul li a:hover{
 /* --GRIDS-- */
 .gridIndex{
     display: grid;
-    grid-template-rows: 10% auto 8%;
+    grid-template-rows: 11% auto 8%;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
@@ -85,7 +90,7 @@ nav ul li a:hover{
 }
 .gridUs{
     display: grid;
-    grid-template-rows: 6% auto 5%;
+    grid-template-rows: 5.7% auto 5%;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
@@ -124,6 +129,7 @@ nav ul li a:hover{
     font-size: 4rem;
     font-family: 'Montserrat';
     font-weight: 600;
+    text-shadow: 4px 3px 9px rgba(0,0,0,0.6);
 }
 .main__banner{
     display: flex;
@@ -208,7 +214,6 @@ nav ul li a:hover{
     transition: all 0.3s ease;
 }
 
-
 /* --NOSOTROS-- */
 .main__us{
     display: flex;
@@ -273,7 +278,8 @@ nav ul li a:hover{
 }
 .main__h3--lugares{
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
 }
 .destinos__div1{
     display: flex;
@@ -291,7 +297,7 @@ nav ul li a:hover{
     width: 80%;
     height: 55rem;
     margin: 2rem;
-    border: 5px solid black;
+    border: 10px ridge #b5bcc2;
 }
 .destinos__mapa iframe{
     height: 100%;
@@ -343,8 +349,10 @@ nav ul li a:hover{
 }
 .destinos__nav li a:hover{
     color: #ffffff;
-    background-color: #00000064;
+    background-color: #000000c6;
     transition: all 0.3s ease;
+    font-weight: normal;
+    box-shadow: 12px 12px 6px 1px rgba(181,188,194,1);
 }
 .destinos__barrios li{
     list-style-image: url('https://api.iconify.design/ps/facebook-places.svg?color=red');
@@ -476,6 +484,8 @@ footer div i{
     transition: all 0.3s ease;
 }
 footer div i:hover{
+    transform: translateY(-3px);
+    filter: drop-shadow(5px 5px #65649574);
     color: rgb(255, 255, 255);
     transition: all 0.2s ease;
 }
