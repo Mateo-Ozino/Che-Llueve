@@ -15,6 +15,7 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     width: 100%;
@@ -126,7 +127,7 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 .main__h1 h1{
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-family: 'Montserrat';
     font-weight: 600;
     text-shadow: 4px 3px 9px rgba(0,0,0,0.6);
@@ -153,7 +154,8 @@ nav ul li a:hover{
 .main__h3{
     font-size: 2.3rem;
     max-width: 65ch;
-    line-height: 3rem;
+    line-height: 3.5rem;
+    margin: 0.5rem;
     font-family: 'Montserrat';
     font-weight: 200;
     text-align: center;
@@ -200,10 +202,10 @@ nav ul li a:hover{
     font-family: 'Esteban';
 }
 .presentacion__btn{
-    min-width: 8rem; 
-    height: 9rem;
+    width: 8.9rem; 
+    height: 8.2rem;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: relative;
     display: inline-block;
     outline: none;
@@ -220,7 +222,7 @@ nav ul li a:hover{
 }
 .presentacion__btn a i{
     text-align: center;
-    font-size: 6rem;
+    font-size: 5.3rem;
     color: #fff;
     padding: 1.5rem;
 }
@@ -281,7 +283,8 @@ nav ul li a:hover{
 
 /* --DESTINOS-- */
 .presentacion__p--pos{
-    max-width: 73ch;
+    max-width: 70ch;
+    line-height: 3.5rem;
 }
 .main__h3--fontWeight{
     font-weight: 400;
@@ -405,10 +408,10 @@ nav ul li a:hover{
     align-self: center;
 }
 form{
-    width: 40rem;
+    width: 43rem;
     border: none;
     background-color: #f6fbff;
-    padding: 1rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -514,10 +517,10 @@ footer div i:hover{
 /* --MEDIA QUERIES-- */
 @media only screen and (min-width: 320px) and (max-width: 426px){
     .gridIndex{
-        grid-template-rows: 20% auto 8%;    
+        grid-template-rows: 32rem auto 8%;    
     }
     .gridUs{
-        grid-template-rows: 13% auto 5%;
+        grid-template-rows: 32rem auto 5%;
     }
     .gridContacto{
         grid-template-columns: 1fr;
