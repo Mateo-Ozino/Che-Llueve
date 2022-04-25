@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../images/logoConFondo.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Mandanos tu lugar!</title>
 </head>
 <body>
@@ -27,7 +29,7 @@
         <!-- Contenido principal -->
         <main class="main">
             <div class="main__banner">
-                <div class="main__h1">
+                <div class="main__h1 animate__animated animate__zoomIn">
                     <h1>Mandanos tu lugar!</h1>
                 </div>
             </div>
@@ -35,7 +37,7 @@
                 <h2 class="main__h2">Querés que tu lugar aparezca en nuestra página?</h2>
                 <h3 class="main__h3">Si sos dueño de algún lugar turístico o algún lugar donde la gente realice actividades recreativas y querés que figure en nuestro sitio, rellená este formulario y nos contactaremos con vos a la brevedad.</h3>
                 <div class="section__form">
-                    <img src="../images/Get started.svg" alt="support">
+                    <img src="../images/Get started.svg" alt="support" data-aos="fade-right" data-aos-duration="1500"> 
                     <form action="enviar.php" method="post" enctype="text/plain">
                             <div class="form__div form__div--flex">
                                 <label for="nombre">Nombre y apellido</label>
@@ -92,5 +94,9 @@
             </div>    
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/logoConFondo.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Che! Llueve!</title>
 </head>
 <body>
@@ -28,21 +29,23 @@
     <!-- Contenido principal -->
         <main class="main">
             <div class="main__banner">
-                <div class="main__h1">
+                <div class="main__h1 animate__animated animate__zoomIn">
                     <h1>Che! Llueve!</h1>
                 </div>
             </div>
             <section class="main__presentacion">
-                <div class="presentacion__img">
+                <div class="presentacion__img" data-aos="fade-right" data-aos-duration="1500">
                     <img src="images/City_SVG.svg">
                 </div>
-                <div class="presentacion__divP">
+                <div class="presentacion__divP" data-aos="fade-left" data-aos-duration="1500">
                     <p class="presentacion__p">Porque te querés despejar de la semana. Porque tuviste mucho trabajo o mucho estudio. Porque viniste a la ciudad de vacaciones. De escapada.<br>Y te llueve.<br> Te traemos <span class="presentacion__p presentacion__p--italic">“Che! Llueve! ©”</span> para que esos planes frustrados se conviertan en un lindo recuerdo. Es eso. Es lluvia. Igual podés conocer, disfrutar, comer, aprender y un montón de cosas más.<br>
                     <span class="presentacion__p presentacion__p--bold">#SalimosIgual</span></p>
                 </div>
                 <div class="presentacion__destinos">
-                    <p>Llueve y tenés ganas de salir? Tocá para averiguar qué hacer!</p><br>
-                    <a href="pages/destinos.html"><i class="fa-solid fa-umbrella presentacion__btn animate__animated animate__backInUp"></i></a>
+                    <p data-aos="fade-up" data-aos-duration="1500">Llueve y tenés ganas de salir? Tocá para averiguar qué hacer!</p><br>
+                    <div class="presentacion__btn" data-aos="zoom-in" data-aos-duration="1600"> 
+                        <a href="pages/destinos.html"><i class="fa-solid fa-umbrella "></i></a>
+                    </div>
                 </div>
             </section>
         </main>
@@ -59,5 +62,9 @@
                 </div>    
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
