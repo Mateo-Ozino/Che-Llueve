@@ -15,11 +15,10 @@
 }
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #f6fbff;
 }
 img{
@@ -170,9 +169,10 @@ nav ul li a:hover{
     flex-flow: row wrap;
     align-items : center;
     justify-content: center;
+    overflow-x: hidden;
 }
 .presentacion__img{
-    width: 25rem;
+    width: 20rem;
 }
 .presentacion__p{
     padding: 1rem;
@@ -235,6 +235,7 @@ nav ul li a:hover{
     justify-content: center;
     gap: 5rem;
     margin: 1rem;
+    overflow-x: hidden;
 }
 .us__div{
     display: flex;
@@ -611,10 +612,10 @@ footer div i:hover{
 }
 @media only screen and (min-width: 426px) and (max-width: 769px) {
     .gridIndex{
-        grid-template-rows: 10% auto 8%;    
+        grid-template-rows: 17rem auto 8%;    
     }
     .gridUs{
-        grid-template-rows: 10% auto 6%;
+        grid-template-rows: 17rem auto 6%;
     }
     .gridContacto{
         grid-template-columns: 1fr;
