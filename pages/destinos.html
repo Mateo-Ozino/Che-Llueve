@@ -18,7 +18,7 @@
         <header>
             <nav class="navbar navbar-expand-md bg-light navbar-light">
                 <div class="container-fluid d-flex">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="../index.html">
                         <img src="../images/logo.svg" alt="logo" class="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
@@ -42,16 +42,6 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
-            <!-- <a href="../index.html" class="header__img"><img src="../images/logo.svg" alt="logo"></a>
-            <nav>
-                <ul>
-                    <li class="nav__inicio"><a href="../index.html">Inicio</a></li>
-                    <li class="nav__nosotros"><a href="nosotros.html">Nosotros</a></li>
-                    <li class="nav__destinos"><a href="destinos.html">Destinos</a></li>
-                    <li class="nav__contacto"><a href="contacto.html">Contacto</a></li>
-                    <li class="nav__nuevoLugar"><a href="nuevo_lugar.html">Mandanos tu lugar!</a></li>
-                </ul> -->
             </nav>
         </header>
     <!-- Contenido principal -->
@@ -92,47 +82,58 @@
                         <ul class="destinos__barrios">
                             <li>
                                 <h4>Catedral Metropolitana de Buenos Aires</h4>
-                                <p>La Catedral Metropolitana es la principal sede de la Iglesia Católica de la Argentina.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#cmba">Sobre el lugar</button>
+                                <p id="cmba" class="collapse">La Catedral Metropolitana es la principal sede de la Iglesia Católica de la Argentina.</p>
                             </li>
                             <li>
                                 <h4>Museo Histórico Nacional del Cabildo y la Revolución de Mayo</h4>
-                                <p>El Museo ocupa el edificio del siglo XVIII donde funcionaba el Cabildo de la Ciudad de la Trinidad y Puerto de Santa María de los Buenos Aires.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mhncrm">Sobre el lugar</button>
+                                <p id="mhncrm" class="collapse">El Museo ocupa el edificio del siglo XVIII donde funcionaba el Cabildo de la Ciudad de la Trinidad y Puerto de Santa María de los Buenos Aires.</p>
                             </li>
                             <li>
                                 <h4>Café Tortoni</h4>
-                                <p>Icónico café estilo francés inaugurado en 1858 y lugar favorito de la élite cultural con tango en vivo.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#cf">Sobre el lugar</button>
+                                <p id="cf" class="collapse">Icónico café estilo francés inaugurado en 1858 y lugar favorito de la élite cultural con tango en vivo.</p>
                             </li>
                             <li>
                                 <h4>Palacio Barolo</h4>
-                                <p>El Palacio Barolo es un edificio de oficinas que hace referencia y homenaje a la DIVINA COMEDIA de DANTE ALIGHIERI.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#pb">Sobre el lugar</button>
+                                <p id="pb" class="collapse">El Palacio Barolo es un edificio de oficinas que hace referencia y homenaje a la DIVINA COMEDIA de DANTE ALIGHIERI.</p>
                             </li>
                             <li>
                                 <h4>London City</h4>
-                                <p>London City fue refugio de poetas, artistas, políticos, periodistas y de los porteños y turistas que paseaban y trabajaban a lo largo de la hermosa Avenida de Mayo.<br>Fue declarado café notable por la Comisión de Protección y Promoción de los cafés, bares, billares y confiterías notables de la ciudad de Buenos Aires.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#lc">Sobre el lugar</button>
+                                <p id="lc" class="collapse">London City fue refugio de poetas, artistas, políticos, periodistas y de los porteños y turistas que paseaban y trabajaban a lo largo de la hermosa Avenida de Mayo.<br>Fue declarado café notable por la Comisión de Protección y Promoción de los cafés, bares, billares y confiterías notables de la ciudad de Buenos Aires.</p>
                             </li>
                             <li>
                                 <h4>Complejo Histórico Cultural Manzana de las Luces</h4>
-                                <p>Son sus objetivos la restauración y conservación de los edificios históricos; la investigación con relación a instituciones, acontecimientos y personajes que desfilaron por la Manzana de las Luces.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#chcml">Sobre el lugar</button>
+                                <p id="chcml" class="collapse">Son sus objetivos la restauración y conservación de los edificios históricos; la investigación con relación a instituciones, acontecimientos y personajes que desfilaron por la Manzana de las Luces.</p>
                             </li>
                             <li>
                                 <h4>Buenos Aires Museo</h4>
-                                <p>Espacio de vanguardia para descubrir la historia y la cultura de la Ciudad de Buenos Aires. Icono del Casco Histórico y puerta de entrada para conocer la ciudad desde su fundación hasta la actualidad</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#bam">Sobre el lugar</button>
+                                <p id="bam" class="collapse">Espacio de vanguardia para descubrir la historia y la cultura de la Ciudad de Buenos Aires. Icono del Casco Histórico y puerta de entrada para conocer la ciudad desde su fundación hasta la actualidad</p>
                             </li>
                             <li>
                                 <h4>Museo Etnográfico Juan B. Ambrosetti</h4>
-                                <p>El Museo Etnográfico es una institución dedicada a la investigación, difusión y conservación del patrimonio histórico y antropológico, desde la perspectiva de los procesos sociales y el respeto por la pluralidad cultural. Posee vastas colecciones de arqueología, etnografía y antropología biológica.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mejba">Sobre el lugar</button>
+                                <p id="mejba" class="collapse">El Museo Etnográfico es una institución dedicada a la investigación, difusión y conservación del patrimonio histórico y antropológico, desde la perspectiva de los procesos sociales y el respeto por la pluralidad cultural. Posee vastas colecciones de arqueología, etnografía y antropología biológica.</p>
                             </li>
                             <li>
                                 <h4>Casa Rosada</h4>
-                                <p>La Casa Rosada es la sede del Poder Ejecutivo de la República Argentina. Dentro de la misma se encuentra el despacho del presidente de la Nación Argentina.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#cr">Sobre el lugar</button>
+                                <p id="cr" class="collapse">La Casa Rosada es la sede del Poder Ejecutivo de la República Argentina. Dentro de la misma se encuentra el despacho del presidente de la Nación Argentina.</p>
                             </li>
                             <li>
                                 <h4>Museo del Bicentenario</h4>
-                                <p>El Museo del Bicentenario ofrece al público una exposición permanente que recorre la historia argentina, desde inicios del siglo XIX hasta nuestros días.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mb">Sobre el lugar</button>
+                                <p id="mb" class="collapse">El Museo del Bicentenario ofrece al público una exposición permanente que recorre la historia argentina, desde inicios del siglo XIX hasta nuestros días.</p>
                             </li>
                             <li>
                                 <h4>Museo Escenográfico Botica del Ángel - Universidad del Salvador</h4>
-                                <p>La Botica del Ángel es un collage escenográfico creado por Eduardo Bergara Leumann en el museo que fue su casa, donde sorprenden obras de arte de muchos artistas plásticos.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#meba">Sobre el lugar</button>
+                                <p id="meba" class="collapse">La Botica del Ángel es un collage escenográfico creado por Eduardo Bergara Leumann en el museo que fue su casa, donde sorprenden obras de arte de muchos artistas plásticos.</p>
                             </li>
                         </ul>
                     </article>
@@ -141,11 +142,13 @@
                         <ul class="destinos__barrios">
                             <li>
                                 <h4>The Break Club</h4>
-                                <p>The Break Club es cumplir tu sueño de entrar a un lugar a romper todo!.<br>En una casona de 1900 en Belgrano funciona a puertas cerradas una experiencia para tus sentidos.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#tbc">Sobre el lugar</button>
+                                <p id="tbc" class="collapse">The Break Club es cumplir tu sueño de entrar a un lugar a romper todo!.<br>En una casona de 1900 en Belgrano funciona a puertas cerradas una experiencia para tus sentidos.</p>
                             </li>
                             <li>
                                 <h4>Mercado de las Pulgas</h4>
-                                <p>Mercado cubierto con varios vendedores que se especializan en antigüedades, decoración y muebles.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mp">Sobre el lugar</button>
+                                <p id="mp" class="collapse">Mercado cubierto con varios vendedores que se especializan en antigüedades, decoración y muebles.</p>
                             </li>
                         </ul>
                     </article>
@@ -154,15 +157,18 @@
                         <ul class="destinos__barrios">
                             <li>
                                 <h4>MUNTREF Sede Hotel de Inmigrantes</h4>
-                                <p>El Museo de la Inmigración es un museo situado en las instalaciones del ex-Hotel de Inmigrantes. Ámbito permanente de memoria y homenaje destinado tanto a quienes vinieron desde Europa, Asia y África como desde Sudamerica</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#hi">Sobre el lugar</button>
+                                <p id="hi" class="collapse">El Museo de la Inmigración es un museo situado en las instalaciones del ex-Hotel de Inmigrantes. Ámbito permanente de memoria y homenaje destinado tanto a quienes vinieron desde Europa, Asia y África como desde Sudamerica</p>
                             </li>
                             <li>
                                 <h4>Colección de Arte Amalia Lacroze de Fortabat</h4>
-                                <p>El MACBA quiere provocar el disfrute y el interés por el arte y la cultura contemporánea desde una voluntad e incidencia transformadora de las personas y la sociedad.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#caalf">Sobre el lugar</button>
+                                <p id="caalf" class="collapse">El MACBA quiere provocar el disfrute y el interés por el arte y la cultura contemporánea desde una voluntad e incidencia transformadora de las personas y la sociedad.</p>
                             </li>
                             <li>
                                 <h4>Museo del humor</h4>
-                                <p>Su objetivo es conservar, investigar y exhibir el patrimonio artístico relacionado con la ilustración, el dibujo y la animación. Además, cuenta con el Paseo de la historieta, que forma parte de su patrimonio desde 2015.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mh">Sobre el lugar</button>
+                                <p id="mh" class="collapse">Su objetivo es conservar, investigar y exhibir el patrimonio artístico relacionado con la ilustración, el dibujo y la animación. Además, cuenta con el Paseo de la historieta, que forma parte de su patrimonio desde 2015.</p>
                             </li>
                         </ul>
                     </article>
@@ -171,19 +177,23 @@
                         <ul class="destinos__barrios">
                             <li>
                                 <h4>Teatro Colón</h4>
-                                <p>El Teatro Colón de Buenos Aires es una de las salas de ópera más importantes del mundo.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#tc">Sobre el lugar</button>
+                                <p id="tc" class="collapse">El Teatro Colón de Buenos Aires es una de las salas de ópera más importantes del mundo.</p>
                             </li>
                             <li>
                                 <h4>Galerias Pacífico</h4>
-                                <p>Centro comercial ubicado en el histórico Edificio del Pacífico</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#gp">Sobre el lugar</button>
+                                <p id="gp" class="collapse">Centro comercial ubicado en el histórico Edificio del Pacífico</p>
                             </li>
                             <li>
                                 <h4>Mercado de San Nicolas</h4>
-                                <p>Además de los puestos históricos de venta de productos frescos, existen varias propuestas gastronómicas que invitan al disfrute de los vecinos, oficinistas y turistas de la zona.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#msn">Sobre el lugar</button>
+                                <p id="msn" class="collapse">Además de los puestos históricos de venta de productos frescos, existen varias propuestas gastronómicas que invitan al disfrute de los vecinos, oficinistas y turistas de la zona.</p>
                             </li>
                             <li>
                                 <h4>Galería Güemes</h4>
-                                <p>Es un edificio de estilo art nouveau que posee un pasaje peatonal interior que une las calles Florida y San Martín, de 116 metros de extensión, con locales comerciales en dos niveles.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#gg">Sobre el lugar</button>
+                                <p id="gg" class="collapse">Es un edificio de estilo art nouveau que posee un pasaje peatonal interior que une las calles Florida y San Martín, de 116 metros de extensión, con locales comerciales en dos niveles.</p>
                             </li>
                         </ul>
                     </article>
@@ -192,7 +202,8 @@
                         <ul class="destinos__barrios">
                             <li>
                                 <h4>Museo de Ciencias Naturales Bernardino Rivadavia</h4>
-                                <p>El Museo Argentino de Ciencias Naturales Bernardino Rivadavia es uno de los principales museos de ciencias naturales de la República Argentina.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mcnbr">Sobre el lugar</button>
+                                <p id="mcnbr" class="collapse">El Museo Argentino de Ciencias Naturales Bernardino Rivadavia es uno de los principales museos de ciencias naturales de la República Argentina.</p>
                             </li>
                         </ul>
                     </article>
@@ -201,31 +212,38 @@
                         <ul class="destinos__barrios">
                             <li>
                                 <h4>El Ateneo Grand Splendid</h4>
-                                <p>El Ateneo Grand Splendid es una librería ubicada en el barrio de Recoleta, Buenos Aires, Argentina. <br>Destaca por situarse donde lo hiciera el teatro Grand Splendid, habiendo conservado la arquitectura original de dicho teatro, pero estando a su vez readaptado para funcionar como librería.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#ags">Sobre el lugar</button>
+                                <p id="ags" class="collapse">El Ateneo Grand Splendid es una librería ubicada en el barrio de Recoleta, Buenos Aires, Argentina. <br>Destaca por situarse donde lo hiciera el teatro Grand Splendid, habiendo conservado la arquitectura original de dicho teatro, pero estando a su vez readaptado para funcionar como librería.</p>
                             </li>
                             <li>
                                 <h4>Museo Nacional de Bellas Artes</h4>
-                                <p>En sus más de 120 años, el Museo Nacional de Bellas Artes ha formado una importante colección de más de doce mil piezas de diferentes períodos artísticos, nacionales e internacionales, que lo constituye como una de las instituciones culturales más relevantes del continente.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mnba">Sobre el lugar</button>
+                                <p id="mnba" class="collapse">En sus más de 120 años, el Museo Nacional de Bellas Artes ha formado una importante colección de más de doce mil piezas de diferentes períodos artísticos, nacionales e internacionales, que lo constituye como una de las instituciones culturales más relevantes del continente.</p>
                             </li>
                             <li>
                                 <h4>Biblioteca Nacional Mariano Moreno</h4>
-                                <p>La Biblioteca Nacional Mariano Moreno, llamada habitualmente Biblioteca Nacional, es la biblioteca más importante de Argentina.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#bnmm">Sobre el lugar</button>
+                                <p id="bnmm" class="collapse">La Biblioteca Nacional Mariano Moreno, llamada habitualmente Biblioteca Nacional, es la biblioteca más importante de Argentina.</p>
                             </li>
                             <li>
                                 <h4>Centro Cultural Recoleta</h4>
-                                <p>El Centro Cultural Recoleta es un espacio vivo y participativo para adolescentes y jóvenes que apuesta a la convivencia en la diversidad y que impulsa los movimientos artísticos del país y del mundo desde hace más de tres décadas.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#ccr">Sobre el lugar</button>
+                                <p id="ccr" class="collapse">El Centro Cultural Recoleta es un espacio vivo y participativo para adolescentes y jóvenes que apuesta a la convivencia en la diversidad y que impulsa los movimientos artísticos del país y del mundo desde hace más de tres décadas.</p>
                             </li>
                             <li>
                                 <h4>La Biela</h4>
-                                <p>La Biela es un representativo bar de Buenos Aires, Argentina, ubicado en el corazón de la Recoleta. Es un sitio de reunión característico de turistas y vecinos.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#lb">Sobre el lugar</button>
+                                <p id="lb" class="collapse">La Biela es un representativo bar de Buenos Aires, Argentina, ubicado en el corazón de la Recoleta. Es un sitio de reunión característico de turistas y vecinos.</p>
                             </li>
                             <li>
                                 <h4>Palais de Glace</h4>
-                                <p>El Palais de Glace o Palacion Nacional de las Artes es el spacio institucional por excelencia del Estado Nacional para la exhibición de arte argentino y sede del Salón Nacional de Artes Visuales.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#pg">Sobre el lugar</button>
+                                <p id="pg" class="collapse">El Palais de Glace o Palacion Nacional de las Artes es el spacio institucional por excelencia del Estado Nacional para la exhibición de arte argentino y sede del Salón Nacional de Artes Visuales.</p>
                             </li>
                             <li>
                                 <h4>Recoleta Urban Mall</h4>
-                                <p>Recoleta Urban Mall propone una variedad de opciones que van desde conocidos restaurantes hasta especialistas en alimentos frescos y orgánicos, hamburgueserías, parrillas, heladerías y cafés. Así como variedad de marcas dedicadas a la indumentaria. <br>Cuenta con salas de cine</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#rum">Sobre el lugar</button>
+                                <p id="rum" class="collapse">Recoleta Urban Mall propone una variedad de opciones que van desde conocidos restaurantes hasta especialistas en alimentos frescos y orgánicos, hamburgueserías, parrillas, heladerías y cafés. Así como variedad de marcas dedicadas a la indumentaria. <br>Cuenta con salas de cine</p>
                             </li>
                         </ul>
                     </area>
@@ -233,20 +251,24 @@
                         <h3 class="main__h3 main__h3--lugares" data-aos="fade-right"> - La Boca -</h3>
                         <ul class="destinos__barrios">
                             <li>
-                                <h4>Usina del Arte</h4> 
-                                <p>Disfrutá de la más variada programación cultural, presencial y virtual, en este espacio único de la Ciudad de Buenos Aires: música, artes visuales, danza, gastronomía y más propuestas para toda la familia.</p>
+                                <h4>Usina del Arte</h4>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#ua">Sobre el lugar</button> 
+                                <p id="ua" class="collapse">Disfrutá de la más variada programación cultural, presencial y virtual, en este espacio único de la Ciudad de Buenos Aires: música, artes visuales, danza, gastronomía y más propuestas para toda la familia.</p>
                             </li>
                             <li>
                                 <h4>Museo Benito Quinquela Martín</h4>
-                                <p>Es una de las Instituciones que el artista boquense donó al barrio con la intención de crear un polo de desarrollo cultural, educativo y sanitario.<br>Comprometido con los procesos educativos, el Museo, promueve una concepción del arte como factor decisivo en los procesos cotidianos de construcción de identidad.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mbqm">Sobre el lugar</button>
+                                <p id="mbqm" class="collapse">Es una de las Instituciones que el artista boquense donó al barrio con la intención de crear un polo de desarrollo cultural, educativo y sanitario.<br>Comprometido con los procesos educativos, el Museo, promueve una concepción del arte como factor decisivo en los procesos cotidianos de construcción de identidad.</p>
                             </li>
                             <li>
                                 <h4>Teatro de la Ribera</h4>
-                                <p>El Teatro de la Ribera es una sala de teatro dedicado desde 2010 exclusivamente al tango.<br>Llama la atención por su pintoresco estilo que replica la arquitectura y los colores de las casas del barrio.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#tr">Sobre el lugar</button>
+                                <p id="tr" class="collapse">El Teatro de la Ribera es una sala de teatro dedicado desde 2010 exclusivamente al tango.<br>Llama la atención por su pintoresco estilo que replica la arquitectura y los colores de las casas del barrio.</p>
                             </li>
                             <li>
                                 <h4>Museo del Cine "Pablo Ducrós Hicken"</h4>
-                                <p>Está dedicado a la preservación, investigación y difusión del patrimonio audiovisual argentino. Cuenta con una sala de proyecciones para 60 personas y una colección dedicada a la historia del cine argentino. También contiene una biblioteca y videoteca con más de 90 mil rollos de película.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mcpdh">Sobre el lugar</button>
+                                <p id="mcpdh" class="collapse">Está dedicado a la preservación, investigación y difusión del patrimonio audiovisual argentino. Cuenta con una sala de proyecciones para 60 personas y una colección dedicada a la historia del cine argentino. También contiene una biblioteca y videoteca con más de 90 mil rollos de película.</p>
                             </li>
                         </ul>
                     </article>
@@ -255,11 +277,13 @@
                         <ul class="destinos__barrios">
                             <li>
                                 <h4>Abasto Shopping</h4>
-                                <p>El Abasto Shopping es uno de los centros comerciales más grandes y exitosos de Buenos Aires.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#as">Sobre el lugar</button>
+                                <p id="as" class="collapse">El Abasto Shopping es uno de los centros comerciales más grandes y exitosos de Buenos Aires.</p>
                             </li>
                             <li>
                                 <h4>Museo Casa Carlos Gardel</h4>
-                                <p>La casa que habitó Carlos Gardel junto a su madre es hoy la sede del Museos Casa Carlos Gardel. Su misión es rescatar,preservar, investigar y difundir el patrimonio vinculado con Gardel, su época y las industrias culturales en las que participó.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mccg">Sobre el lugar</button>
+                                <p id="mccg" class="collapse">La casa que habitó Carlos Gardel junto a su madre es hoy la sede del Museos Casa Carlos Gardel. Su misión es rescatar,preservar, investigar y difundir el patrimonio vinculado con Gardel, su época y las industrias culturales en las que participó.</p>
                             </li>
                         </ul>
                     </article>
@@ -268,15 +292,18 @@
                         <ul class="destinos__barrios">
                             <li>
                                 <h4>Museo de Arte Español Enrique Larreta</h4>
-                                <p>Ubicado en el barrio de Belgrano, el Museo de Arte Español Enrique Larreta fue la casa del escritor y coleccionista donde hoy en día conviven en sus salas permanentes las manifestaciones del arte español del Siglo de Oro, el teatro, la literatura y la cultura española.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#maeel">Sobre el lugar</button>
+                                <p id="maeel" class="collapse">Ubicado en el barrio de Belgrano, el Museo de Arte Español Enrique Larreta fue la casa del escritor y coleccionista donde hoy en día conviven en sus salas permanentes las manifestaciones del arte español del Siglo de Oro, el teatro, la literatura y la cultura española.</p>
                             </li>
                             <li>
                                 <h4>Museo Histórico Sarmiento</h4>
-                                <p>En 1938, con motivo del cincuentenario de la muerte de Domingo Faustino Sarmiento, destacado escritor, político, educador y presidente de la República, se creó este museo en su memoria.<br>Aquí se exhiben objetos personales del prócer, su biblioteca, hemeroteca y archivo.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mhs">Sobre el lugar</button>
+                                <p id="mhs" class="collapse">En 1938, con motivo del cincuentenario de la muerte de Domingo Faustino Sarmiento, destacado escritor, político, educador y presidente de la República, se creó este museo en su memoria.<br>Aquí se exhiben objetos personales del prócer, su biblioteca, hemeroteca y archivo.</p>
                             </li>
                             <li>
                                 <h4>Mercado de Belgrano</h4>
-                                <p>El Mercado Belgrano está emplazado en terrenos que fueron cedidos por los herederos del escritor José Hernández en 1875. Su historia y la calidad de los productos que ofrece distinguen al Mercado y lo vuelven parte indispensable de la identidad del barrio.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#mbel">Sobre el lugar</button>
+                                <p id="mbel" class="collapse">El Mercado Belgrano está emplazado en terrenos que fueron cedidos por los herederos del escritor José Hernández en 1875. Su historia y la calidad de los productos que ofrece distinguen al Mercado y lo vuelven parte indispensable de la identidad del barrio.</p>
                             </li>
                         </ul>
                     </article>
@@ -285,19 +312,23 @@
                         <ul class="destinos__barrios">
                             <li>
                                 <h4>Planetario Galileo Galilei</h4>
-                                <p>Espacio tecnológico que te acerca al mundo astronómico, donde podés experimentar, sorprenderte y aprender</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#pgg">Sobre el lugar</button>
+                                <p id="pgg" class="collapse">Espacio tecnológico que te acerca al mundo astronómico, donde podés experimentar, sorprenderte y aprender</p>
                             </li>
                             <li>
                                 <h4>MALBA</h4>
-                                <p>Malba es un espacio cultural dinámico y participativo en el que se presentan exposiciones temporarias de diversa índole y muestras de arte contemporáneo argentino y latinoamericano. Además, cuenta con un importante programa de cine. El museo también tiene un área de Literatura a través del cual realiza encuentros con escritores, cursos, seminarios, charlas literarias y presentaciones de libros.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#malba">Sobre el lugar</button>
+                                <p id="malba" class="collapse">Malba es un espacio cultural dinámico y participativo en el que se presentan exposiciones temporarias de diversa índole y muestras de arte contemporáneo argentino y latinoamericano. Además, cuenta con un importante programa de cine. El museo también tiene un área de Literatura a través del cual realiza encuentros con escritores, cursos, seminarios, charlas literarias y presentaciones de libros.</p>
                             </li>
                             <li>
                                 <h4>Teatro Ciego</h4>
-                                <p>Una experiencia completamente inmersiva que despertará tu imaginación y desafiará tu realidad a través de los sentidos, movilizando cada parte de tu cuerpo.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#tciego">Sobre el lugar</button>
+                                <p id="tciego" class="collapse">Una experiencia completamente inmersiva que despertará tu imaginación y desafiará tu realidad a través de los sentidos, movilizando cada parte de tu cuerpo.</p>
                             </li>
                             <li>
                                 <h4>Alcorta Shopping</h4>
-                                <p>Construido en 1992, Alcorta se ha posicionado como el centro comercial referente de la moda Argentina.Reúne las mejores propuestas, marcas y diseñadores, concentrando moda y vanguardia en un solo lugar.</p>
+                                <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#alcortashop">Sobre el lugar</button>
+                                <p id="alcortashop" class="collapse">Construido en 1992, Alcorta se ha posicionado como el centro comercial referente de la moda Argentina.Reúne las mejores propuestas, marcas y diseñadores, concentrando moda y vanguardia en un solo lugar.</p>
                             </li>
                         </ul>
                     </article>
