@@ -404,17 +404,20 @@ header{
     font-weight: 600;
     border-radius: 5px;
     border: 2px solid black;
+    transition: all .7s ease;
 }
 .btn-info:hover{
     color: white;
     background-color: orangered;
     border: 2px solid black;
+    transition: all .7s ease;
 }
 .btn-info:focus{
     color: white;
     background-color: orangered;
     border-color: rgb(255, 94, 35);
     box-shadow: 0 0 0 0.25rem rgba(255, 135, 36, 0.655);
+    transition: all .7s ease;
 }
 .btn-info:active{
     box-shadow: 0 0 0 0.40rem rgba(255, 135, 36, 0.655) !important;
@@ -430,8 +433,15 @@ header{
     border-radius: 10px;
     transition: all ease .15s;
 }
+.d-flex>.shadow-lg{
+    box-shadow: 1px -1px 21px 5px rgba(0,0,0,0.39) !important;
+    -webkit-box-shadow: 1px -1px 21px 5px rgba(0,0,0,0.39) !important;
+    -moz-box-shadow: 1px -1px 21px 5px rgba(0,0,0,0.39) !important;
+    /* border-radius: 5px 5px 45px 5px; */
+}
 form{
     font-family: 'Montserrat';
+    padding: 1rem;
 }
 form label{
     font-weight: 600;
@@ -444,12 +454,15 @@ textarea{
 }
 .form-control{
     border: 1px solid black;
+    border-radius: 8px;
 }
 .form-check-input{
     border: 1px solid black;
 }
 .form-select{
     border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
 }
 .form-floating>.form-control{
     height: 5rem;
@@ -459,6 +472,12 @@ textarea{
 }
 .floatingSelect{
     font-size: 2rem !important;
+}
+.valid-feedback{
+    font-size: 1.4rem;
+}
+.invalid-feedback{
+    font-size: 1.4rem;
 }
 .form-control:focus{
     border-color: rgb(255, 94, 35);
