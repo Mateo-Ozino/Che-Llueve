@@ -35,9 +35,9 @@ body::-webkit-scrollbar {
 	background: gray;
 }
 body::-webkit-scrollbar-thumb {
-	background: rgba(0, 0, 0, 0.2);
-	border-radius: 12px;
-	border-right: 3px solid rgb(54, 54, 54);
+    box-shadow: 1px 10px 23px 6px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 1px 10px 23px 6px rgba(0,0,0,0.59);
+    -moz-box-shadow: 1px 10px 23px 6px rgba(0,0,0,0.59);
 }
 
 
@@ -67,6 +67,9 @@ header{
 }
 .navbar{
     background: linear-gradient(to right, #A3C5DE 0%, 17.953166365623474%, #FD1018 35.90633273124695%, 50.08673071861267%, #FFB11D 64.2671287059784%, 82.1335643529892%, #A3C5DE 100%);
+    box-shadow: 1px 41px 76px 6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 41px 76px 6px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 41px 76px 6px rgba(0,0,0,0.5);
     padding: 0;
 }
 .navbar-nav{
@@ -85,10 +88,14 @@ header{
 .nav-link:hover{
     color: white !important;
     border-bottom: 2px solid white;
-    transition: all 0.3s ease;
+    transition: all .2s ease;
 }
 .navbar-collapse{
     justify-content: flex-end;
+}
+.nav-active{
+    color: white !important;
+    border-bottom: 2px solid white;
 }
 
 
@@ -139,6 +146,9 @@ header{
     display: flex;
     justify-content: center;
     background-image: url(images/low-angle-shot-times-square-new-york-usa.jpg);
+    box-shadow: 1px 6px 76px 6px rgba(0,0,0,0.29);
+    -webkit-box-shadow: 1px 6px 76px 6px rgba(0,0,0,0.29);
+    -moz-box-shadow: 1px 6px 76px 6px rgba(0,0,0,0.29);
     background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
@@ -206,8 +216,8 @@ header{
     font-family: 'Esteban';
 }
 .presentacion__btn{
-    width: 8.9rem; 
-    height: 8.2rem;
+    width: 8.4rem; 
+    height: 7.9rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -226,7 +236,7 @@ header{
 }
 .presentacion__btn a i{
     text-align: center;
-    font-size: 5.3rem;
+    font-size: 4.9rem;
     color: #fff;
     padding: 1.5rem;
 }
@@ -541,6 +551,9 @@ footer{
     justify-content: space-between;
     grid-area: footer;
     background: linear-gradient(to right, #A3C5DE 0%, 17.953166365623474%, #FD1018 35.90633273124695%, 50.08673071861267%, #FFB11D 64.2671287059784%, 82.1335643529892%, #A3C5DE 100%);
+    box-shadow: 1px -10px 76px 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px -10px 76px 6px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px -10px 76px 6px rgba(0,0,0,0.3);
     padding: 2rem;
     width: 100%;
 }
