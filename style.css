@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* PARTIALS */
-/* GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +30,7 @@ ul {
   padding: 0;
 }
 
-/* SCROLLBAR */
+/* --SCROLLBAR-- */
 body::-webkit-scrollbar {
   width: 12px;
   background: gray;
@@ -153,6 +152,46 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
+/* --FOOTER-- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  grid-area: footer;
+  background: linear-gradient(to right, #A3C5DE 0%, 17.9531663656%, #FD1018 35.9063327312%, 50.0867307186%, #FFB11D 64.267128706%, 82.133564353%, #A3C5DE 100%);
+  box-shadow: 1px -10px 76px 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px -10px 76px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px -10px 76px 6px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  width: 100%;
+}
+footer div {
+  align-self: center;
+}
+footer div p {
+  margin: 0;
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+footer .footer__div2 {
+  display: flex;
+  gap: 1rem;
+}
+footer .footer__div2 i {
+  font-size: 2.5rem;
+  width: 2.8rem;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+footer .footer__div2 i:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(5px 5px rgba(101, 100, 149, 0.4549019608));
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out;
+}
+
 /* --INDEX-- */
 .main__presentacion {
   margin: 1rem;
@@ -201,13 +240,12 @@ body::-webkit-scrollbar-thumb {
   width: 8.4rem;
   height: 7.9rem;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
   position: relative;
   display: inline-block;
   outline: none;
   border-radius: 50%;
   border: none;
-  background-size: 150% auto;
+  background-size: 120% auto;
   background-image: linear-gradient(315deg, #833ab4 0%, #fd1d1d 50%, #fcb045);
 }
 .presentacion__btn:hover {
@@ -387,7 +425,6 @@ body::-webkit-scrollbar-thumb {
 .btn-info {
   margin: 1rem;
   color: black;
-  background-color: orangered;
   background-color: #7283A6;
   font-size: 1.6rem;
   font-family: "Montserrat";
@@ -458,6 +495,9 @@ body::-webkit-scrollbar-thumb {
   border-color: rgb(255, 94, 35);
   box-shadow: 0 0 0 0.25rem rgba(255, 135, 36, 0.655);
 }
+.main__sectionForm .d-flex .contenedorFormulario form .form-check-input {
+  cursor: pointer;
+}
 .main__sectionForm .d-flex .contenedorFormulario form .form-check-input:checked {
   border: orange;
   background-color: orangered;
@@ -476,6 +516,7 @@ body::-webkit-scrollbar-thumb {
   padding: 0.5rem;
   color: white;
   margin: 1rem;
+  font-size: 2.2rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -484,63 +525,22 @@ body::-webkit-scrollbar-thumb {
   outline: none;
   border-radius: 10px;
 }
+.form__resetSubmit .form__resetSubmit--style:hover {
+  background: white;
+}
 .form__resetSubmit .form__resetSubmit--style1 {
-  font-size: 2.2rem;
   border: 2px solid #d90429;
   background: #d90429;
 }
 .form__resetSubmit .form__resetSubmit--style1:hover {
-  background: #fff;
   color: #d90429;
 }
 .form__resetSubmit .form__resetSubmit--style2 {
-  font-size: 2.2rem;
   border: 2px solid #57cc99;
   background: #57cc99;
 }
 .form__resetSubmit .form__resetSubmit--style2:hover {
-  background: #fff;
   color: #57cc99;
-}
-
-/* --FOOTER-- */
-footer {
-  display: flex;
-  justify-content: space-between;
-  grid-area: footer;
-  background: linear-gradient(to right, #A3C5DE 0%, 17.9531663656%, #FD1018 35.9063327312%, 50.0867307186%, #FFB11D 64.267128706%, 82.133564353%, #A3C5DE 100%);
-  box-shadow: 1px -10px 76px 6px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 1px -10px 76px 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 1px -10px 76px 6px rgba(0, 0, 0, 0.3);
-  padding: 2rem;
-  width: 100%;
-}
-footer div {
-  align-self: center;
-}
-footer div p {
-  margin: 0;
-  width: 100%;
-  font-size: 1.8rem;
-  font-family: "Montserrat";
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-}
-footer .footer__div2 {
-  display: flex;
-  gap: 1rem;
-}
-footer .footer__div2 i {
-  font-size: 2.5rem;
-  width: 2.8rem;
-  color: rgb(0, 0, 0);
-  transition: all 0.3s ease-in-out;
-}
-footer .footer__div2 i:hover {
-  transform: translateY(-3px);
-  filter: drop-shadow(5px 5px rgba(101, 100, 149, 0.4549019608));
-  color: rgb(255, 255, 255);
-  transition: all 0.2s ease-in-out;
 }
 
 /* --MEDIA QUERIES-- */
