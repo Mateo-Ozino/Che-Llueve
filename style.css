@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Esteban&family=Lemon&family=Podkova&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* PARTIALS */
 /* GENERAL */
 * {
   margin: 0;
@@ -111,7 +112,6 @@ body::-webkit-scrollbar-thumb {
   padding: 0.5rem;
   border-radius: 5px;
 }
-
 .main__h1 h1 {
   font-size: 4rem;
   font-family: "Montserrat";
@@ -176,13 +176,11 @@ body::-webkit-scrollbar-thumb {
   text-align: left;
   font-family: "Esteban";
 }
-
-.presentacion__p--italic {
-  font-style: italic;
-}
-
-.presentacion__p--bold {
+.presentacion__p .presentacion__p--bold {
   font-weight: bold;
+}
+.presentacion__p .presentacion__p--italic {
+  font-style: italic;
 }
 
 .presentacion__destinos {
@@ -192,7 +190,6 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 1rem;
 }
-
 .presentacion__destinos p {
   font-weight: bold;
   text-align: center;
@@ -213,19 +210,16 @@ body::-webkit-scrollbar-thumb {
   background-size: 150% auto;
   background-image: linear-gradient(315deg, #833ab4 0%, #fd1d1d 50%, #fcb045);
 }
-
 .presentacion__btn:hover {
   background-position: right center;
 }
-
 .presentacion__btn:active {
-  top: 2px;
+  top: 3px;
 }
-
 .presentacion__btn a i {
   text-align: center;
   font-size: 4.9rem;
-  color: #fff;
+  color: white;
   padding: 1.5rem;
 }
 
@@ -246,23 +240,33 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   gap: 1rem;
 }
+.us__div p {
+  max-width: 63ch;
+}
+.us__div .container__img {
+  border-radius: 10px;
+  min-width: 15rem;
+  max-width: 20rem;
+  overflow: hidden;
+}
+.us__div .container__img img {
+  transition: 1.5s ease-in-out;
+}
+.us__div .container__img img:hover {
+  transform: scale(1.4) translateY(15px);
+}
+.us__div .container__img2 {
+  min-width: 20rem;
+  max-width: 25rem;
+}
 
 .us__div1 {
   width: 18rem;
 }
 
-.us__div2 {
+.us__div2, .us__div4 {
   flex-direction: row-reverse;
 }
-
-.us__div4 {
-  flex-direction: row-reverse;
-}
-
-.us__div p {
-  max-width: 63ch;
-}
-
 .us__div2 p, .us__div4 p {
   text-align: end;
 }
@@ -271,60 +275,73 @@ body::-webkit-scrollbar-thumb {
   text-align: start;
 }
 
-.container__img {
-  border-radius: 10px;
-  min-width: 15rem;
-  max-width: 20rem;
-  overflow: hidden;
-}
-
-.container__img img {
-  transition: 1.5s ease-in-out;
-}
-
-.container__img img:hover {
-  transform: scale(1.4) translateY(15px);
-}
-
-.container__img2 {
-  min-width: 20rem;
-  max-width: 25rem;
-}
-
 /* --DESTINOS-- */
-.presentacion__p--pos {
+.destinos__div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.destinos__div1 .presentacion__p--pos {
   max-width: 70ch;
   line-height: 3.5rem;
 }
+.destinos__div1 .destinos__mapa {
+  width: 80%;
+  height: 55rem;
+  margin: 2rem;
+  border: 10px ridge #b5bcc2;
+}
+.destinos__div1 .destinos__mapa iframe {
+  width: 100%;
+  height: 100%;
+}
 
-.main__h3--fontWeight {
+.destinos__div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.destinos__div2 .main__h3--fontWeight {
   font-weight: 400;
   font-size: 2.8rem;
+}
+.destinos__div2 .destinos__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-self: center;
+  margin-bottom: 3rem;
+}
+.destinos__div2 .destinos__nav li {
+  list-style: none;
+}
+.destinos__div2 .destinos__nav li a {
+  display: inline;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  text-decoration: none;
+  font-size: 2.3rem;
+  font-family: "Amiri";
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+.destinos__div2 .destinos__nav li a:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7764705882);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 8px 8px 6px 1px rgb(181, 188, 194);
 }
 
 .main__h3--lugares {
   font-weight: 700;
   font-size: 3rem;
   margin: 1.5rem;
-}
-
-.destinos__div1, .destinos__div2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.destinos__mapa {
-  width: 80%;
-  height: 55rem;
-  margin: 2rem;
-  border: 10px ridge #b5bcc2;
-}
-
-.destinos__mapa iframe {
-  height: 100%;
-  width: 100%;
 }
 
 .mapaBtn {
@@ -340,63 +357,25 @@ body::-webkit-scrollbar-thumb {
   right: 2%;
   transition: all 0.3s ease-in-out;
 }
-
 .mapaBtn:hover {
-  background-color: #ffffff;
+  background-color: white;
   transition: all 0.3s ease-in-out;
 }
-
-.fa-map-location-dot {
+.mapaBtn .fa-map-location-dot {
   font-size: 3.5rem;
   color: black;
-}
-
-.destinos__nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-self: center;
-  margin-bottom: 3rem;
-}
-
-.destinos__nav li {
-  list-style: none;
-}
-
-.destinos__nav li a {
-  display: inline;
-  background-color: #ffffff;
-  color: black;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  text-decoration: none;
-  font-size: 2.3rem;
-  font-family: "Amiri";
-  font-weight: bold;
-  transition: all 0.2s ease-in-out;
-}
-
-.destinos__nav li a:hover {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.7764705882);
-  transition: all 0.2s ease-in-out;
-  box-shadow: 8px 8px 6px 1px rgb(181, 188, 194);
 }
 
 .destinos__barrios li {
   list-style-image: url("https://api.iconify.design/ps/facebook-places.svg?color=red");
   margin: 0 1rem 2rem 2rem;
 }
-
 .destinos__barrios li h4 {
   font-size: 2.3rem;
   font-weight: 600;
   font-family: "Montserrat";
   line-height: 3rem;
 }
-
 .destinos__barrios li p {
   font-family: "Esteban";
   font-size: 1.8rem;
@@ -416,14 +395,12 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
   border: 2px solid black;
 }
-
 .btn-info:hover {
   color: white;
   background-color: orangered;
   border: 2px solid black;
   transition: all 0.2s ease-in-out;
 }
-
 .btn-info:focus {
   color: white;
   background-color: orangered;
@@ -431,7 +408,6 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 0 0 0.25rem rgba(255, 135, 36, 0.655);
   transition: all 0.2s ease-in-out;
 }
-
 .btn-info:active {
   box-shadow: 0 0 0 0.4rem rgba(255, 135, 36, 0.655) !important;
 }
@@ -441,75 +417,53 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
 }
-
-.main__sectionForm div {
+.main__sectionForm .d-flex .contenedorFormulario {
   border-radius: 10px;
   transition: all 0.15s ease-in-out;
-}
-
-.d-flex > .shadow-lg {
   box-shadow: 1px -1px 21px 5px rgba(0, 0, 0, 0.39) !important;
   -webkit-box-shadow: 1px -1px 21px 5px rgba(0, 0, 0, 0.39) !important;
   -moz-box-shadow: 1px -1px 21px 5px rgba(0, 0, 0, 0.39) !important;
 }
-
-form {
+.main__sectionForm .d-flex .contenedorFormulario form {
   font-family: "Montserrat";
   padding: 1rem;
 }
-
-form label {
+.main__sectionForm .d-flex .contenedorFormulario form label {
   font-weight: 600;
 }
-
-form p {
+.main__sectionForm .d-flex .contenedorFormulario form p {
   font-weight: 500;
 }
-
-textarea {
+.main__sectionForm .d-flex .contenedorFormulario form textarea {
   overflow: hidden;
 }
-
-.form-control, .form-check-input {
-  border: 1px solid black;
-  border-radius: 8px;
+.main__sectionForm .d-flex .contenedorFormulario form .form-floating .form-control {
+  height: 5rem;
 }
-
-.form-select {
+.main__sectionForm .d-flex .contenedorFormulario form .form-floating .form-select {
+  height: 5.05rem !important;
   border: 1px solid black;
   border-radius: 8px;
   cursor: pointer;
 }
-
-.form-floating > .form-control {
-  height: 5rem;
-}
-
-.form-select {
-  height: 5.05rem !important;
-}
-
-.floatingSelect {
-  font-size: 2rem !important;
-}
-
-.valid-feedback, .invalid-feedback {
-  font-size: 1.4rem;
-}
-
-.form-control:focus, .form-select:focus {
+.main__sectionForm .d-flex .contenedorFormulario form .form-floating .form-select:focus {
   border-color: rgb(255, 94, 35);
   box-shadow: 0 0 0 0.25rem rgba(255, 135, 36, 0.655);
 }
-
-.form-check-input:focus {
+.main__sectionForm .d-flex .contenedorFormulario form .form-control, .main__sectionForm .d-flex .contenedorFormulario form .form-check-input {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.main__sectionForm .d-flex .contenedorFormulario form .form-control:focus, .main__sectionForm .d-flex .contenedorFormulario form .form-check-input:focus {
   border-color: rgb(255, 94, 35);
   box-shadow: 0 0 0 0.25rem rgba(255, 135, 36, 0.655);
 }
-
-.form-check-input:checked {
+.main__sectionForm .d-flex .contenedorFormulario form .form-check-input:checked {
   border: orange;
   background-color: orangered;
+}
+.main__sectionForm .d-flex .contenedorFormulario form .valid-feedback, .main__sectionForm .d-flex .contenedorFormulario form .invalid-feedback {
+  font-size: 1.4rem;
 }
 
 .form__resetSubmit {
@@ -517,11 +471,10 @@ textarea {
   display: flex;
   justify-content: center !important;
 }
-
-.form__resetSubmit--style {
+.form__resetSubmit .form__resetSubmit--style {
   width: 15rem;
   padding: 0.5rem;
-  color: #fff;
+  color: white;
   margin: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -531,25 +484,21 @@ textarea {
   outline: none;
   border-radius: 10px;
 }
-
-.form__resetSubmit--style1 {
+.form__resetSubmit .form__resetSubmit--style1 {
   font-size: 2.2rem;
   border: 2px solid #d90429;
   background: #d90429;
 }
-
-.form__resetSubmit--style2 {
+.form__resetSubmit .form__resetSubmit--style1:hover {
+  background: #fff;
+  color: #d90429;
+}
+.form__resetSubmit .form__resetSubmit--style2 {
   font-size: 2.2rem;
   border: 2px solid #57cc99;
   background: #57cc99;
 }
-
-.form__resetSubmit--style1:hover {
-  background: #fff;
-  color: #d90429;
-}
-
-.form__resetSubmit--style2:hover {
+.form__resetSubmit .form__resetSubmit--style2:hover {
   background: #fff;
   color: #57cc99;
 }
@@ -566,11 +515,9 @@ footer {
   padding: 2rem;
   width: 100%;
 }
-
 footer div {
   align-self: center;
 }
-
 footer div p {
   margin: 0;
   width: 100%;
@@ -579,20 +526,17 @@ footer div p {
   color: rgb(0, 0, 0);
   font-weight: 600;
 }
-
-.footer__div2 {
+footer .footer__div2 {
   display: flex;
   gap: 1rem;
 }
-
-footer div i {
+footer .footer__div2 i {
   font-size: 2.5rem;
   width: 2.8rem;
   color: rgb(0, 0, 0);
   transition: all 0.3s ease-in-out;
 }
-
-footer div i:hover {
+footer .footer__div2 i:hover {
   transform: translateY(-3px);
   filter: drop-shadow(5px 5px rgba(101, 100, 149, 0.4549019608));
   color: rgb(255, 255, 255);
@@ -601,10 +545,6 @@ footer div i:hover {
 
 /* --MEDIA QUERIES-- */
 @media only screen and (min-width: 320px) and (max-width: 426px) {
-  .navbar {
-    background: linear-gradient(to right, #A3C5DE 0%, 17.9531663656%, #FD1018 35.9063327312%, 50.0867307186%, #FFB11D 64.267128706%, 82.133564353%, #A3C5DE 100%);
-  }
-
   .navbar-nav {
     gap: 15px;
     margin-bottom: 10px;
@@ -613,7 +553,6 @@ footer div i:hover {
   .nav-link {
     font-size: 23px;
   }
-
   .nav-link:hover {
     border-bottom: 0;
     -webkit-text-decoration: underline white;
@@ -628,7 +567,6 @@ footer div i:hover {
   .main__h1 {
     width: 90%;
   }
-
   .main__h1 h1 {
     max-width: 70ch;
     text-align: center;
@@ -645,7 +583,6 @@ footer div i:hover {
   .us__div {
     flex-direction: column;
   }
-
   .us__div p {
     text-align: center;
   }
@@ -655,8 +592,7 @@ footer div i:hover {
     justify-content: center;
     align-items: center;
   }
-
-  .form__resetSubmit--style1, .form__resetSubmit--style2 {
+  .main__sectionForm .d-flex .form__resetSubmit--style1, .main__sectionForm .d-flex .form__resetSubmit--style2 {
     font-size: 1.8rem;
   }
 
@@ -664,24 +600,21 @@ footer div i:hover {
     font-size: 2.3rem;
   }
 
-  .destinos__nav {
+  .destinos__div2 .destinos__nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
-
-  .destinos__nav li {
+  .destinos__div2 .destinos__nav li {
     padding: 0.2rem;
     text-align: center;
   }
-
-  .destinos__nav li a {
+  .destinos__div2 .destinos__nav li a {
     font-size: 1.6rem;
   }
-
-  .destinos__barrios li p {
+  .destinos__div2 .destinos__nav li p {
     line-height: 3rem;
   }
 
@@ -694,8 +627,7 @@ footer div i:hover {
     width: 5rem;
     bottom: 5%;
   }
-
-  .fa-map-location-dot {
+  .mapaBtn .fa-map-location-dot {
     font-size: 2.5rem;
   }
 
@@ -703,16 +635,11 @@ footer div i:hover {
     flex-direction: column;
     gap: 1rem;
   }
-
   footer div p {
     text-align: center;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 769px) {
-  .navbar {
-    background: linear-gradient(to right, #A3C5DE 0%, 17.9531663656%, #FD1018 35.9063327312%, 50.0867307186%, #FFB11D 64.267128706%, 82.133564353%, #A3C5DE 100%);
-  }
-
   .navbar-nav {
     gap: 15px;
     margin-bottom: 10px;
@@ -721,7 +648,6 @@ footer div i:hover {
   .nav-link {
     font-size: 23px;
   }
-
   .nav-link:hover {
     border-bottom: 0;
     -webkit-text-decoration: underline white;
@@ -745,31 +671,28 @@ footer div i:hover {
   .us__div {
     flex-direction: column;
   }
-
   .us__div p {
     text-align: center;
   }
 
-  .main__sectionForm .d-flex {
+  .main__sectionForm.d-flex {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .destinos__nav {
+  .destinos__div2 .destinos__nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 3rem;
          column-gap: 3rem;
     row-gap: 1.5rem;
   }
-
-  .destinos__nav li {
+  .destinos__div2 .destinos__nav li {
     padding: 0.5rem;
     text-align: center;
   }
-
-  .destinos__nav li a {
+  .destinos__div2 .destinos__nav li a {
     font-size: 2rem;
   }
 
@@ -781,8 +704,7 @@ footer div i:hover {
     width: 5rem;
     bottom: 3%;
   }
-
-  .fa-map-location-dot {
+  .mapaBtn .fa-map-location-dot {
     font-size: 2.8rem;
   }
 
@@ -790,7 +712,6 @@ footer div i:hover {
     flex-direction: column;
     gap: 1rem;
   }
-
   footer div p {
     text-align: center;
   }
@@ -800,7 +721,7 @@ footer div i:hover {
     font-size: 18px;
   }
 
-  .destinos__nav {
+  .destinos__div2 .destinos__nav {
     display: grid;
     min-width: 100%;
     grid-template-columns: repeat(5, 1fr);
@@ -811,8 +732,7 @@ footer div i:hover {
     align-items: center;
     justify-items: center;
   }
-
-  .destinos__nav li a {
+  .destinos__div2 .destinos__nav li a {
     font-size: 1.7rem;
   }
 
@@ -821,7 +741,7 @@ footer div i:hover {
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1499px) {
-  .destinos__nav {
+  .destinos__div2 .destinos__nav {
     min-width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
