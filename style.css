@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* --FONTS-- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Esteban&family=Lemon&family=Podkova&display=swap");
@@ -120,7 +121,10 @@ body::-webkit-scrollbar-thumb {
 
 .main__banner {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
+  gap: 0rem;
   background-image: url(images/low-angle-shot-times-square-new-york-usa-compressed.jpg);
   box-shadow: 1px 6px 76px 6px rgba(0, 0, 0, 0.29);
   -webkit-box-shadow: 1px 6px 76px 6px rgba(0, 0, 0, 0.29);
@@ -155,8 +159,10 @@ body::-webkit-scrollbar-thumb {
 /* --FOOTER-- */
 footer {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
-  grid-area: footer;
+  align-items: center;
+  gap: 0rem;
   background: linear-gradient(to right, #A3C5DE 0%, 17.9531663656%, #FD1018 35.9063327312%, 50.0867307186%, #FFB11D 64.267128706%, 82.133564353%, #A3C5DE 100%);
   box-shadow: 1px -10px 76px 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 1px -10px 76px 6px rgba(0, 0, 0, 0.3);
@@ -170,13 +176,16 @@ footer div {
 footer div p {
   margin: 0;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: "Montserrat";
   color: rgb(0, 0, 0);
   font-weight: 600;
 }
 footer .footer__div2 {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 footer .footer__div2 i {
@@ -194,12 +203,12 @@ footer .footer__div2 i:hover {
 
 /* --INDEX-- */
 .main__presentacion {
-  margin: 1rem;
   display: flex;
-  gap: 1rem;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
   overflow-x: hidden;
 }
 
@@ -207,7 +216,7 @@ footer .footer__div2 i:hover {
   width: 20rem;
 }
 
-.presentacion__p {
+.presentacion__p, .destinos__div1 .presentacion__p--pos {
   padding: 1rem;
   max-width: 60ch;
   font-size: 1.8rem;
@@ -215,19 +224,20 @@ footer .footer__div2 i:hover {
   text-align: left;
   font-family: "Esteban";
 }
-.presentacion__p .presentacion__p--bold {
+.presentacion__p .presentacion__p--bold, .destinos__div1 .presentacion__p--pos .presentacion__p--bold {
   font-weight: bold;
 }
-.presentacion__p .presentacion__p--italic {
+.presentacion__p .presentacion__p--italic, .destinos__div1 .presentacion__p--pos .presentacion__p--italic {
   font-style: italic;
 }
 
 .presentacion__destinos {
-  padding: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding: 1rem;
 }
 .presentacion__destinos p {
   font-weight: bold;
@@ -264,9 +274,9 @@ footer .footer__div2 i:hover {
 /* --NOSOTROS-- */
 .main__us {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column nowrap;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
   margin: 1rem;
   overflow-x: hidden;
@@ -274,8 +284,9 @@ footer .footer__div2 i:hover {
 
 .us__div {
   display: flex;
-  align-items: center;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 .us__div p {
@@ -316,7 +327,8 @@ footer .footer__div2 i:hover {
 /* --DESTINOS-- */
 .destinos__div1 {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -337,7 +349,8 @@ footer .footer__div2 i:hover {
 
 .destinos__div2 {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -347,9 +360,10 @@ footer .footer__div2 i:hover {
 }
 .destinos__div2 .destinos__nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
-  align-self: center;
   margin-bottom: 3rem;
 }
 .destinos__div2 .destinos__nav li {
@@ -384,7 +398,10 @@ footer .footer__div2 i:hover {
 
 .mapaBtn {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
+  gap: 0rem;
   width: 6rem;
   padding: 1rem;
   background-color: rgba(181, 188, 194, 0.5294117647);
@@ -509,7 +526,10 @@ footer .footer__div2 i:hover {
 .form__resetSubmit {
   border: none;
   display: flex;
-  justify-content: center !important;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
 }
 .form__resetSubmit .form__resetSubmit--style {
   width: 15rem;
@@ -528,18 +548,21 @@ footer .footer__div2 i:hover {
 .form__resetSubmit .form__resetSubmit--style:hover {
   background: white;
 }
-.form__resetSubmit .form__resetSubmit--style1 {
+
+/*DISTINCIÓN ENTRE BOTONES*/
+.form__resetSubmit--reset {
   border: 2px solid #d90429;
-  background: #d90429;
+  background-color: #d90429;
 }
-.form__resetSubmit .form__resetSubmit--style1:hover {
+.form__resetSubmit--reset:hover {
   color: #d90429;
 }
-.form__resetSubmit .form__resetSubmit--style2 {
+
+.form__resetSubmit--submit {
   border: 2px solid #57cc99;
-  background: #57cc99;
+  background-color: #57cc99;
 }
-.form__resetSubmit .form__resetSubmit--style2:hover {
+.form__resetSubmit--submit:hover {
   color: #57cc99;
 }
 
@@ -572,7 +595,7 @@ footer .footer__div2 i:hover {
     text-align: center;
   }
 
-  .presentacion__p {
+  .presentacion__p, .destinos__div1 .presentacion__p--pos {
     text-align: center;
   }
 
@@ -592,7 +615,7 @@ footer .footer__div2 i:hover {
     justify-content: center;
     align-items: center;
   }
-  .main__sectionForm .d-flex .form__resetSubmit--style1, .main__sectionForm .d-flex .form__resetSubmit--style2 {
+  .main__sectionForm .d-flex .form__resetSubmit--reset, .main__sectionForm .d-flex .form__resetSubmit--submit {
     font-size: 1.8rem;
   }
 
@@ -602,10 +625,12 @@ footer .footer__div2 i:hover {
 
   .destinos__div2 .destinos__nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 1rem;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+    margin-bottom: 2rem;
   }
   .destinos__div2 .destinos__nav li {
     padding: 0.2rem;
@@ -683,10 +708,11 @@ footer .footer__div2 i:hover {
 
   .destinos__div2 .destinos__nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 1.5rem;
     -moz-column-gap: 3rem;
          column-gap: 3rem;
-    row-gap: 1.5rem;
   }
   .destinos__div2 .destinos__nav li {
     padding: 0.5rem;
@@ -723,12 +749,12 @@ footer .footer__div2 i:hover {
 
   .destinos__div2 .destinos__nav {
     display: grid;
-    min-width: 100%;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3rem;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
-    row-gap: 3rem;
+    min-width: 100%;
     align-items: center;
     justify-items: center;
   }
@@ -742,13 +768,13 @@ footer .footer__div2 i:hover {
 }
 @media only screen and (min-width: 1025px) and (max-width: 1499px) {
   .destinos__div2 .destinos__nav {
-    min-width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3rem;
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
-    row-gap: 3rem;
+    min-width: 100%;
     align-items: center;
     justify-items: center;
   }

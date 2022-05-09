@@ -1,4 +1,4 @@
-@import "variables";
+@import "vars-y-mixins";
 
 *{
     margin: 0;
@@ -100,8 +100,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 .main__banner{
-    display: flex;
-    justify-content: center;
+    @include flex(row nowrap, center, center, 0rem);
     background-image: url(images/low-angle-shot-times-square-new-york-usa-compressed.jpg);
     box-shadow: 1px 6px 76px 6px rgba(0,0,0,0.29);
     -webkit-box-shadow: 1px 6px 76px 6px rgba(0,0,0,0.29);
@@ -133,9 +132,7 @@ body::-webkit-scrollbar-thumb {
 
 /* --FOOTER-- */
 footer{
-    display: flex;
-    justify-content: space-between;
-    grid-area: footer;
+    @include flex(row nowrap, space-between, center, 0rem);
     background: $bgHeaderFooter;
     box-shadow: 1px -10px 76px 6px rgba(0,0,0,0.3);
     -webkit-box-shadow: 1px -10px 76px 6px rgba(0,0,0,0.3);
@@ -147,15 +144,14 @@ footer{
         & p{
             margin: 0;
             width: 100%;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-family: 'Montserrat';
             color: rgb(0, 0, 0);
             font-weight: 600;
         }
     }
     & .footer__div2{
-        display: flex;
-        gap: 1rem;
+        @include flex(row nowrap, center, center, 1rem);
         & i{
             font-size: 2.5rem;
             width: 2.8rem;
