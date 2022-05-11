@@ -44,10 +44,13 @@ body::-webkit-scrollbar-thumb {
     transition: $transicion1;
 }
 .navbar-toggler{
-    border: 3px solid black !important;
+    border: 3px solid;
     border-radius: 6px;
     transition: $transicion1;
     font-size: 3.2rem;
+}
+.navbar-light .navbar-toggler{
+    border-color: black;
 }
 .navbar-toggler-icon{
     width: 4.2rem;
@@ -70,11 +73,16 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
-    color: black !important;
     transition: $transicion1;
 }
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    &:hover{
+        color: white;
+    }
+}
 .nav-link:hover{
-    color: white !important;
+    color: white;
     border-bottom: 2px solid white;
     transition: $transicion2;
 }
@@ -101,7 +109,7 @@ body::-webkit-scrollbar-thumb {
 }
 .main__banner{
     @include flex(row nowrap, center, center, 0rem);
-    background-image: url(images/low-angle-shot-times-square-new-york-usa-compressed.jpg);
+    background-image: url(../images/banner-comp.jpg);
     box-shadow: 1px 6px 76px 6px rgba(0,0,0,0.29);
     -webkit-box-shadow: 1px 6px 76px 6px rgba(0,0,0,0.29);
     -moz-box-shadow: 1px 6px 76px 6px rgba(0,0,0,0.29);
