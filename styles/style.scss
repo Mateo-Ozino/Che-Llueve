@@ -191,25 +191,54 @@
         color: black;
     }
 }
+.destinos__barrios{
+    @include flex(column nowrap, center, center, 2rem);
+}
 .destinos__barrios li{
-    list-style-image: url('https://api.iconify.design/ps/facebook-places.svg?color=red');
-    margin: 0 1rem 2rem 2rem;
+    list-style: none;
+    margin-top: 1rem;
     & h4{
         font-size: 2.3rem;
         font-weight: 600;
         font-family: 'Montserrat';
         line-height: 3rem;
+        text-align: center;
     }
     & p{
         font-family: 'Esteban';
         font-size: 1.8rem;
-        line-height: 2.5rem;
+        line-height: 2.6rem;
         font-weight: lighter;
-        max-width: 68ch;
+        max-width: 65ch;
+    }
+    .card{
+        width: 90vw;
+        border-radius: 10px;
+        box-shadow: 1px 1px 7px 3px rgba(0,0,0,0.31);
+        transition: $transicion2;
+        &-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        &-img-top{
+            margin-top: 1rem;
+            width: 3.5rem;
+            align-self: center;
+        }
+        &:hover{
+            transform: translateY(-2px);
+            filter: drop-shadow(6px 6px #52526a5b);
+            transition: $transicion2;
+        }
     }
 }
 .btn-info{
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: black;
     background-color: #7283A6;
     font-size: 1.6rem;
@@ -227,7 +256,7 @@
         color: white;
         background-color: orangered;
         border-color: rgb(255, 94, 35);
-        box-shadow: 0 0 0 0.25rem rgba(255, 135, 36, 0.655);
+        box-shadow: $shadowOrange;
         transition: $transicion2;
     }
 }
@@ -267,7 +296,7 @@
                         cursor: pointer;
                         &:focus{
                             border-color: rgb(255, 94, 35);
-                            box-shadow: 0 0 0 0.25rem rgba(255, 135, 36, 0.655);
+                            box-shadow: $shadowOrange;
                         }
                     }
                 }
@@ -276,7 +305,7 @@
                     border-radius: 8px;
                     &:focus{
                         border-color: rgb(255, 94, 35);
-                        box-shadow: 0 0 0 0.25rem rgba(255, 135, 36, 0.655);
+                        box-shadow: $shadowOrange;
                     }
                 }
                 & .form-check-input{
@@ -292,9 +321,9 @@
             }
         }
         & .shadowPropio{
-            box-shadow: 1px -1px 21px 5px rgba(0,0,0,0.39);
-            -webkit-box-shadow: 1px -1px 21px 5px rgba(0,0,0,0.39);
-            -moz-box-shadow: 1px -1px 21px 5px rgba(0,0,0,0.39);
+            box-shadow: $shadowLarge;
+            -webkit-box-shadow: $shadowLarge;
+            -moz-box-shadow: $shadowLarge;
         }
     }
 }
@@ -521,9 +550,40 @@ $botonesFormulario: (
             }
         } 
     }
+    .destinos__barrios{
+        @include flex(row wrap, center, center, 2rem);
+        & li{
+            margin-top: 0rem;
+            & h4{
+                max-width: 28ch;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            }
+            & p{
+                font-size: 1.6rem;
+            }
+            .card{
+                width: 47vw;
+                height: min-content;
+                & img{
+                    height: min-content;
+                    width: 2rem;
+                }
+                &-body{
+                    justify-content: flex-start;
+                    padding: 0.2rem;
+                    & p{
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
     .mapaBtn{
         bottom: 15%;
     }
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1499px){
@@ -533,6 +593,32 @@ $botonesFormulario: (
             min-width: 100%;
             align-items: center;
             justify-items: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    .destinos__barrios{
+        @include flex(row wrap, center, center, 2rem);
+        & li{
+            & h4{
+                font-size: 1.9rem;
+                line-height: 2.2rem;
+            }
+            & p{
+                font-size: 1.7rem;
+            }
+            .card{
+                width: 40vw;
+                height: min-content;
+                & img{
+                    height: min-content;
+                    width: 2rem;
+                }
+                &-body{
+                    justify-content: flex-start;
+                }
+            }
         }
     }
 }

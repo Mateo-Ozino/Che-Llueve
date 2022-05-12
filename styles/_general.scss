@@ -89,8 +89,8 @@ body::-webkit-scrollbar-thumb {
 .navbar-collapse{
     justify-content: flex-end;
 }
-.nav-active{
-    color: white !important;
+#indexActive, #usActive, #destinosActive, #contactActive, #nLugarActive{
+    color: white;
     border-bottom: 2px solid white;
 }
 
@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #f2f2f297;
     padding: 0.5rem;
     border-radius: 5px;
-    & h1{
+    h1{
         font-size: 4rem;
         font-family: 'Montserrat';
         font-weight: 600;
@@ -159,7 +159,7 @@ footer{
         }
     }
     & .footer__div2{
-        @include flex(row nowrap, center, center, 1rem);
+        //@include flex(row nowrap, center, center, 1rem);
         & i{
             font-size: 2.5rem;
             width: 2.8rem;
@@ -171,6 +171,11 @@ footer{
                 color: rgb(255, 255, 255);
                 transition: $transicion2;
             }
+        }
+        & ul{
+            @include flex(row nowrap, center, center, 1rem);
+            list-style: none;
+            margin-bottom: 0;
         }
     }
 }
