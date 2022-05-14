@@ -236,10 +236,10 @@ footer .footer__div2 ul {
   text-align: left;
   font-family: "Esteban";
 }
-.presentacion__p .presentacion__p--bold, .destinos__div1 .presentacion__p--pos .presentacion__p--bold {
+.presentacion__p--bold {
   font-weight: bold;
 }
-.presentacion__p .presentacion__p--italic, .destinos__div1 .presentacion__p--pos .presentacion__p--italic {
+.presentacion__p--italic {
   font-style: italic;
 }
 
@@ -446,7 +446,7 @@ footer .footer__div2 ul {
   margin-top: 1rem;
 }
 .destinos__barrios li h4 {
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-weight: 600;
   font-family: "Montserrat";
   line-height: 3rem;
@@ -580,7 +580,7 @@ footer .footer__div2 ul {
   align-items: center;
   gap: 0rem;
 }
-.form__resetSubmit .form__resetSubmit--style {
+.form__resetSubmit--style {
   width: 15rem;
   padding: 0.5rem;
   color: white;
@@ -594,7 +594,7 @@ footer .footer__div2 ul {
   outline: none;
   border-radius: 10px;
 }
-.form__resetSubmit .form__resetSubmit--style:hover {
+.form__resetSubmit--style:hover {
   background: white;
 }
 
@@ -666,10 +666,6 @@ footer .footer__div2 ul {
   }
   .main__sectionForm .d-flex .form__resetSubmit--reset, .main__sectionForm .d-flex .form__resetSubmit--submit {
     font-size: 1.8rem;
-  }
-
-  .destinos__barrios li h4 {
-    font-size: 2.3rem;
   }
 
   .destinos__div2 .destinos__nav {
@@ -749,7 +745,7 @@ footer .footer__div2 ul {
     text-align: center;
   }
 
-  .main__sectionForm.d-flex {
+  .main__sectionForm .d-flex {
     flex-direction: column;
     justify-content: center;
     align-items: center;

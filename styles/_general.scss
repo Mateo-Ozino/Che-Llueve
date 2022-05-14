@@ -147,9 +147,9 @@ footer{
     -moz-box-shadow: 1px -10px 76px 6px rgba(0,0,0,0.3);
     padding: 2rem;
     width: 100%;
-    & div{
+    div{
         align-self: center;
-        & p{
+        p{
             margin: 0;
             width: 100%;
             font-size: 1.6rem;
@@ -158,9 +158,8 @@ footer{
             font-weight: 600;
         }
     }
-    & .footer__div2{
-        //@include flex(row nowrap, center, center, 1rem);
-        & i{
+    .footer__div2{
+        i{
             font-size: 2.5rem;
             width: 2.8rem;
             color: rgb(0, 0, 0);
@@ -172,7 +171,7 @@ footer{
                 transition: $transicion2;
             }
         }
-        & ul{
+        ul{
             @include flex(row nowrap, center, center, 1rem);
             list-style: none;
             margin-bottom: 0;
