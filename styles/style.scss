@@ -111,9 +111,11 @@ $div: end;
         }
     }
 } @else {
-    flex-direction: row;
-    p{
-        text-align: start;
+    .us__div3{
+        flex-direction: row;
+        p{
+            text-align: start;
+        }
     }
 }
 
