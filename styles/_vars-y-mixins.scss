@@ -5,6 +5,7 @@ $transicion2: all 0.2s ease-in-out;
 $shadowLarge: 1px -1px 21px 5px rgba(0,0,0,0.39);
 $shadowOrange: 0 0 0 0.25rem rgba(255, 135, 36, 0.655);
 
+
 //MIXINS
 @mixin flex ($flexFlow, $justifyContent, $alignItems, $gap){
     display: flex;
