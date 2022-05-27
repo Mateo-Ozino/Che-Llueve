@@ -321,6 +321,12 @@ $div: end;
                     .form-control{
                     height: 5rem;
                     }
+                    .select-contacto{
+                        width: 100%;
+                        .form-select{
+                            width: 100%;
+                        }
+                    }
                     .form-select{
                         height: 5.05rem;
                         border: 1px solid black;
@@ -380,6 +386,51 @@ $div: end;
         }
     }
 }
+
+/*MENSAJE QUE APARECE DESPUÉS DEL ENVÍO DE UN FORMULARIO*/
+.envioForm{
+    margin: auto;
+    margin-top: 1rem;
+    width: 35rem;
+    border: 3px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    & p{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .logo{
+        width: 8rem;
+        margin-bottom: 1rem;
+    }
+    .botonEnvio{
+        width: 50%;
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        background-color: #7283A6;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        & a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+        }
+        &:hover{
+            background-color: rgba(255, 68, 0, 0.804);
+        }
+    }
+}
+
 /*DISTINCIÓN ENTRE BOTONES*/
 $botonesFormulario: (
     reset: #d90429,

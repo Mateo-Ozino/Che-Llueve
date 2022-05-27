@@ -66,7 +66,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="col-11 col-md-10 col-xl-9 shadowPropio p-4 mb-5 mt-4 bg-body contenedorFormulario">
-                        <form class="needs-validation fs-1" name="contacto" novalidate netlify>
+                        <form action="../php/contacto.php" method="POST" class="needs-validation fs-1" name="contacto" novalidate netlify>
                             <div class="form-floating mb-4 mt-3">
                                 <input type="text" class="form-control fs-4" placeholder="Nombre" name="nombre" required>
                                 <label for="nombre" class="fs-3">Nombre y apellido</label>
@@ -79,15 +79,25 @@
                                 <div class="valid-feedback">Correcto!</div>
                                 <div class="invalid-feedback">Completa los datos correctamente</div>
                             </div>
-                            <p class="mb-0 fs-3">Elegí el motivo por el cual querés contactar con nosotros:</p>
-                            <div class="form-check form-check-inline">
+                            <p class="mb-0 fs-3">Elegí el motivo por el cual querés contactar con nosotros: </p>
+                            <div class="form-floating mb-4">
+                                <select name="motivo" class="form-select fs-3" required>
+                                    <option selected disabled value="">Selecciona una opción</option>
+                                    <option>Sugerencia</option>
+                                    <option>Problema</option>
+                                </select>
+                                <label for="motivo" class="fs-4 fw-bold p-3">Motivo</label>
+                                <div class="valid-feedback">Correcto!</div>
+                                <div class="invalid-feedback">Completa los datos correctamente</div>
+                            </div>
+                            <!-- <div class="form-check form-check-inline">
                                 <input type="radio" name="motivo" class="form-check-input fs-4" required>
-                                <label for="razon" class="form-check-label fs-3">Sugerencia</label>
+                                <label for="motivo" class="form-check-label fs-3">Sugerencia</label>
                             </div>
                             <div class="form-check form-check-inline mb-3">
                                 <input type="radio" name="motivo" class="form-check-input fs-4" required>
-                                <label for="razon" class="form-check-label fs-3">Problema</label>
-                            </div>
+                                <label for="motivo" class="form-check-label fs-3">Problema</label>
+                            </div> -->
                             <div class="form-floating mb-4">
                                 <textarea class="form-control fs-4" name="consulta" placeholder="Escribí tu consulta" required></textarea>
                                 <label for="consulta" class="fs-3">Consulta</label>
