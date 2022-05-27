@@ -553,9 +553,6 @@ footer .footer__div2 ul {
 .main__sectionForm .d-flex .contenedorFormulario form p {
   font-weight: 500;
 }
-.main__sectionForm .d-flex .contenedorFormulario form textarea {
-  overflow: hidden;
-}
 .main__sectionForm .d-flex .contenedorFormulario form .form-floating .form-control {
   height: 5rem;
 }
